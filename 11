@@ -6,7 +6,7 @@ local localPlayer    = players.LocalPlayer
 local mouse          = localPlayer:GetMouse()
 
 local library = {
-    cheatname = "miget porn.pub";
+    cheatname = "enore.pub";
     colorpicking = false;
     tabbuttons = {};
     tabs = {};
@@ -20,13 +20,13 @@ local library = {
     blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}
 }
 
-if game:GetService("CoreGui"):FindFirstChild("HkbLbWscRa7b7jogdSlb")  then
-    game:GetService("CoreGui"):FindFirstChild("HkbLbWscRa7b7jogdSlb"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("enore.pub")  then
+    game:GetService("CoreGui"):FindFirstChild("enore.pub"):Destroy()
 elseif game:GetService("CoreGui"):FindFirstChild(library.cheatname) then
     game:GetService("CoreGui"):FindFirstChild(library.cheatname):Destroy()
 end
 
-local menu           = game:GetObjects("rbxassetid://17387753511")[1]
+local menu           = game:GetObjects("rbxassetid://17578089024")[1]
 menu.bg.Position     = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
 menu.Parent          = game:GetService("CoreGui")
 
