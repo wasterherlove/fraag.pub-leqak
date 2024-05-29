@@ -6,7 +6,7 @@ local localPlayer    = players.LocalPlayer
 local mouse          = localPlayer:GetMouse()
 
 local library = {
-    cheatname = "enore.pub";
+    cheatname = "enore.wtf | efials ui for beta";
     colorpicking = false;
     tabbuttons = {};
     tabs = {};
@@ -15,7 +15,7 @@ local library = {
     scrolling = false;
     multiZindex = 200;
     toInvis = {};
-    libColor = Color3.fromRGB(90, 97, 255);
+    libColor = Color3.fromRGB(207, 53, 252);
     disabledcolor = Color3.fromRGB(233, 0, 0);
     blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}
 }
@@ -26,7 +26,7 @@ elseif game:GetService("CoreGui"):FindFirstChild(library.cheatname) then
     game:GetService("CoreGui"):FindFirstChild(library.cheatname):Destroy()
 end
 
-local menu           = game:GetObjects("rbxassetid://17578089024")[1]
+local menu           = game:GetObjects("rbxassetid://17660397171")[1]
 menu.bg.Position     = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
 menu.Parent          = game:GetService("CoreGui")
 
@@ -103,8 +103,8 @@ function library:addTab(name)
         for i,v in next, library.tabbuttons do
             local state = v == newButton
             if state then
-                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(90, 97, 255)})
-                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(90, 97, 255)})
+                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(207, 53, 252)})
+                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(207, 53, 252)})
             else
                 library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)})
                 library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)})
