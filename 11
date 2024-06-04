@@ -15,7 +15,7 @@ local library = {
     scrolling = false;
     multiZindex = 200;
     toInvis = {};
-    libColor = Color3.fromRGB(207, 53, 252);
+    libColor = Color3.fromRGB(191, 0, 247);
     disabledcolor = Color3.fromRGB(233, 0, 0);
     blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}
 }
@@ -103,8 +103,8 @@ function library:addTab(name)
         for i,v in next, library.tabbuttons do
             local state = v == newButton
             if state then
-                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(207, 53, 252)})
-                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(207, 53, 252)})
+                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(197, 0, 255)})
+                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(197, 0, 255)})
             else
                 library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)})
                 library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)})
@@ -195,7 +195,7 @@ function library:addTab(name)
             
             mid.Name = "mid"
             mid.Parent = tobble
-            mid.BackgroundColor3 = Color3.fromRGB(69, 23, 255)
+            mid.BackgroundColor3 = Color3.fromRGB(197, 0, 255)
             mid.BorderColor3 = Color3.fromRGB(60, 60, 60)
             mid.BorderSizePixel = 0
             mid.Size = UDim2.new(0, 8, 0, 8)
@@ -284,7 +284,7 @@ function library:addTab(name)
                 keybind.Size = UDim2.new(0, 51, 0, 10)
                 
                 button.Parent = keybind
-                button.BackgroundColor3 = Color3.fromRGB(187, 131, 255)
+                button.BackgroundColor3 = Color3.fromRGB(229, 115, 255)
                 button.BackgroundTransparency = 1.000
                 button.BorderSizePixel = 0
                 button.Position = UDim2.new(-0.270902753, 0, 0, 0)
@@ -361,7 +361,7 @@ function library:addTab(name)
                 
                 mid.Name = "mid"
                 mid.Parent = colorpicker
-                mid.BackgroundColor3 = Color3.fromRGB(69, 23, 255)
+                mid.BackgroundColor3 = Color3.fromRGB(197, 0, 255)
                 mid.BorderColor3 = Color3.fromRGB(60, 60, 60)
                 mid.BorderSizePixel = 0
                 mid.Size = UDim2.new(1, 0, 1, 0)
@@ -1336,7 +1336,7 @@ function library:addTab(name)
 
             mid.Name = "mid"
             mid.Parent = colorpicker_2
-            mid.BackgroundColor3 = Color3.fromRGB(69, 23, 255)
+            mid.BackgroundColor3 = Color3.fromRGB(197, 0, 255)
             mid.BorderColor3 = Color3.fromRGB(60, 60, 60)
             mid.BorderSizePixel = 0
             mid.Size = UDim2.new(1, 0, 1, 0)
@@ -1573,7 +1573,7 @@ function library:addTab(name)
             text.TextXAlignment = Enum.TextXAlignment.Left
             
             button.Parent = keybind
-            button.BackgroundColor3 = Color3.fromRGB(187, 131, 255)
+            button.BackgroundColor3 = Color3.fromRGB(229, 115, 255)
             button.BackgroundTransparency = 1.000
             button.BorderSizePixel = 0
             button.Position = UDim2.new(7.09711117e-08, 0, 0, 0)
