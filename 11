@@ -6,7 +6,7 @@ local localPlayer    = players.LocalPlayer
 local mouse          = localPlayer:GetMouse()
 
 local library = {
-    cheatname = "enore.wtf | efials ui for beta";
+    cheatname = "enore.wtf | efials ui | enore beta | universal";
     colorpicking = false;
     tabbuttons = {};
     tabs = {};
